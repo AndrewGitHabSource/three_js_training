@@ -6,8 +6,8 @@ const renderer = new THREE.WebGLRenderer();
 const geometry = new THREE.SphereGeometry(1, 64, 64);
 const textureLoader = new THREE.TextureLoader();
 const earthTexture = textureLoader.load('textures/4k_earth_daymap.png');
-const bumpTexture = textureLoader.load('path_to/earth_bump.png');
-const specularTexture = textureLoader.load('path_to/4k_earth_heightmap.png');
+const bumpTexture = textureLoader.load('textures/earth_bump.png');
+const specularTexture = textureLoader.load('textures/4k_earth_heightmap.png');
 const material = new THREE.MeshPhongMaterial({
     map: earthTexture,
     bumpMap: bumpTexture,
